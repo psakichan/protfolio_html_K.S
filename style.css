@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --font-family-base: 'Poppins', sans-serif;
+}
+
+.fv{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fv h1{
+    position: relative;
+    z-index: 500;
+    font-family: 'poppins';
+    font-weight: 900;
+    color: #F69300;
+    font-size: 140px;
+    line-height: 1;
+    translate: 0 80px;
+}
+.img-box{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* .img-box img{
+    position: absolute;
+}
+.img-box img:nth-last-of-type(1){
+    right:300px;
+}
+.img-box img:nth-last-of-type(2){
+    bottom: 112px;
+    left: 200px;
+    z-index: 100px;
+}
+.img-box img:nth-last-of-type(3){
+    bottom: -43px;
+    left: 0;
+}
+.img-box img:nth-last-of-type(4){
+    bottom: -100px;
+    left: 50px;
+    
+}
+.img-box img:nth-last-of-type(5){
+    bottom: 100px;
+    left: 100px;
+}
+.img-box img:nth-last-of-type(6){
+    bottom: 0px;
+    left: -100px;
+
+    
+}
+.img-box img:nth-last-of-type(7){
+    bottom: 0;
+    right: 832px;
+} */
+
+.img-box-left{
+    margin-bottom: 10px;
+    width: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.img-box-right{
+    margin-bottom: 100px;
+    width: 50%;
+    position: absolute;
+    top: 100px;
+    right: -150px;
+    img{
+        object-fit: contain;
+    }
+    z-index: 300;
+    text-align:right
+}
+
+.box-left-01{
+    position: absolute;
+    top: 120px;
+    left: 66px;
+    img:last-child{
+        translate: 50% -13%;;
+    }
+}
+
+.box-left-02{
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    display: flex;
+    gap: 80px;
+    img{
+        object-fit: contain;
+    }
+    
+}
+.box-right-01{
+    display: flex;
+    img:last-child{
+        translate: 30px;
+        z-index: 400;
+        margin-left: 100px;
+    }
+    img{
+        object-fit: contain
+    };
+    img:last-child{
+        margin-bottom: -60px;
+        margin-left: 100px;
+        z-index: 300px;
+    }
+
+}
+/* .box-right-02{
+    right: 400px;
+    top: 101px;
+} */
+
+/* .img-box .img-box-right{
+    position: absolute;
+    top: 10;
+    right: -100px;
+    padding-top: 100px;
+    padding: -50px;
+
+
+}
+
+.img-box .img-box-right img{
+    position: relative;
+    right: 130px;
+}
+.img-box .img-box-right img:first-child{
+    display: 100px;
+    padding: -150px;
+    right: 100px;
+}
+
+.img-box .img-box-left{
+    position: absolute;
+    left: 130px;
+    padding-top: 0;
+}
+.img-box .img-box-left img{
+    position: relative;
+}
+
+.img-box .img-box-left img:first-child{
+    display: inline-block;
+    margin-bottom: 80px;
+} */
+.about{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.about.about-captio{
+    margin-top: 100px;
+}
+.about-img{
+    margin-top: 100px;
+    top: 100px;
+    width: 45%;
+    aspect-ratio: 56/45;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.about-name{
+    margin-top: 100px;
+}
+/* .about-name{ */
+    /* font-size: 40px; */
+    /* color: #fbf4ff; */
+/* } */
+.about-job{
+    margin-top: 4px;
+    /* これをposition: absolute;にすると真ん中にいく */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.sns{
+    display: flex;
+    margin-top: 24px;
+    gap: 8px;
+}
+body{
+    background-color:#faf3e0;
+}
+.skill{
+    width: 90%;
+    max-width: 1200px;
+    margin: 120px auto 0;
+    text-align: center;
+}
+.skill h2{
+    font-size: 48px;
+    line-height: 1,2;
+    font-weight: 900;
+    color:00;
+}
+.skill-content{
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.skill-item{
+    width: 23%;
+    margin-bottom: 1%;
+}
+.skill-item img{
+    width: 100%;
+    aspect-ratio: 29/18;
+}
+.works{
+    padding-top: 200px;
+    margin-bottom: 100px;
+}
+.works-title{
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+.works-title::before{
+    content: "Works";
+    display: inline-block;
+    font-size: 160px;
+    font-weight: 900;
+    line-height: 1;
+    color: #F69300;
+    position: absolute;
+    bottom: 0;
+    left: -8%;
+    z-index: -1;
+    opacity: 0.3;
+    /* ファイルのサイズを極限まで抑えたいときは、.3でも良い */
+    /* opacity:とは透明度のこと */
+}
+.works-list{
+    margin-top: 60px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* リピートがされる↑ */
+    gap: 8px;
+}
+.works-list img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 8px;
+    /* これで常に16/9が保たれる */
+}
+.skill-item span{
+    font-size: 16px;
+    line-height: 1,2;
+    margin-top: 4px;
+    font-weight: 700;
+}
+.skill{
+    width: 90%;
+    max-width: 1200px;
+    margin: 120px auto 0;
+    text-align: center;
+}
+.skill h2{
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 900;
+    color: #F69300;
+}
+
+.skill-content{
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.skill-item{
+    width: 23%;
+    margin-bottom: 1%;
+}
+  
+.skill-item img{
+    width: 100%;
+    aspect-ratio: 29/18;
+    object-fit: cover;
+    border-radius: 8px;
+}
+  
+.skill-item span{
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 4px;
+    font-weight: 700;
+}
+
+.works li{
+    list-style: none;
+}
+
+
+/* 点を消す時のリセットcss */
+
+/* .works-list{
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    /* 写真を横並びにする↑ */
+    /* gap: 1%;  
+    padding: 0; 
+} */
+
+/* .works-list li{
+    width: 24.25%; 
+    margin-bottom: 1%;
+} */
+
+/* .works-list li img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
+} */
+
+/* スマホ版 */
+
+@media screen and (max-width:800px){
+    .works-title{
+        font-size: 10px;
+    }
+}
+.about-caption{
+    width: 100%;
+}
+
+.footer{
+    background-color: #f6940034;
+    width: 100%;
+    padding: 40px 0;
+}
+.footer .font{
+    text-align: center;
+    /* ↑アブソリュートをしなくても、これで文字を真ん中にできる。 */
+}
+/* 気になったところを頑張って一つずつ直していく */
+
+/* もしmax-widthを４００pxにしたかったら、{}の真下に４００pxを作る */
+
+/* もしスマホ版から作るならmin-widthになる */
+
+/* ちなみにスマホ版のmax-widthは、７６８pxが相場↓ */
+
+@media screen and (max-width: 768px) {
+    .fv h1{
+        color: blue;
+        /* スマホ版で対応させた時は、オレンジから青に変わる */
+     }
+ }
+ 
+ @media screen and (max-width: 480px) {
+    p{
+        background-color: #faf3e0;
+         color:#faf3e0;
+     }
+ }
+
+ pc{
+    display: block;
+  }
+  .sp{
+    display: none;
+  }
+  
+  @media only screen and (max-width: 480px){
+    .pc{
+      display: none;
+    }
+    .sp{
+      display: block;
+    }
+  }
+
+/* 
+.footer img{
+    width: 200px;
+    position: fixed;
+    right: 0;
+    bottom: 0%;
+    border-radius: 30px;
+    z-index: 100px;
+    transform: scale(-1,1);
+    動かしても、ずっとついてくるやつ
+} */
+
+
